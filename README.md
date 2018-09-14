@@ -1,6 +1,6 @@
 # GPS-Denied UAV Localization using Pre-existing Satellite Imagery
 
-This repository contains the code for our paper, GPS-Denied UAV Localization using Pre-existing Satellite Imagery.
+This is the repo for our paper, GPS-Denied UAV Localization using Pre-existing Satellite Imagery.
 
 ### Dependencies
 
