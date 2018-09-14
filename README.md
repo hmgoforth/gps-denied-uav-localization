@@ -13,17 +13,17 @@ To train the deep features from satellite images, and to test on the flight data
 
 Download dataset folders from [this Google Drive](https://drive.google.com/drive/folders/1sscpYCZXCRUWKl9eUDQGz-DZQLo3HeDe?usp=sharing) and add to top level of repo after downloading.
 
-### Training and Testing Deep Features `deep_feat`
+### Training and Testing Deep Features
 
-Fine-tune VGG16 conv3 block with New Jersey dataset ('woodbridge'):
+In `deep_feat`, fine-tune VGG16 conv3 block with New Jersey dataset ('woodbridge'):
 
 ```
 python3 evaluate.py train woodbridge ../sat_data/ trained_model_output.pth ../models/vgg16_model.pth
 ```
 
-### Testing Alignment on UAV Datasets `optimize`
+### Testing Alignment on UAV Datasets
 
-Testing alignment on Village dataset using trained model, aligning every UAV image in dataset sequentially with the map:
+In `optimize`, testing alignment on Village dataset using trained model, aligning every UAV image in dataset sequentially with the map:
 
 ```
 python3 pose_opt.py sliding_window -image_dir ../village/frames/ -image_dir_ext *.JPG -motion_param_loc ../village/P_village.csv -map_loc ../village/map_village.jpg -model_path ../models/conv_02_17_18_1833.pth -opt_img_height 100 -img_h_rel_pose 1036.8 -opt_param_save_loc ../village/test_out.mat
