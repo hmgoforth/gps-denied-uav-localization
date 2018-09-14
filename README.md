@@ -11,7 +11,7 @@ To train the deep features from satellite images, and to test on the flight data
 - SciPy 0.19.1
 - Matplotlib 2.0.2
 
-Download dataset folders from this Google Drive link and add to top level of repo after downloading.
+Download dataset folders from [this Google Drive](https://drive.google.com/drive/folders/1sscpYCZXCRUWKl9eUDQGz-DZQLo3HeDe?usp=sharing) and add to top level of repo after downloading.
 
 ### Training and Testing Deep Features
 
